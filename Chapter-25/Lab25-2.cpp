@@ -1,13 +1,11 @@
 #include <iostream>
 #include <cmath>
 
-
 class Base_class {
  public:
  int base, height;
  int width, length;
  double radius;
- int depth;
  
  void findArea() {
   std::cout << "findArea() in Base class" << std::endl;
@@ -43,4 +41,27 @@ class Rectangle : public Base_class {
 };
 class Circle : public Base_class {
  public: 
- Circle(double rr){...
+ Circle(double rr){
+  radius = rr;
+ }
+ void findArea() {
+  std::cout << "Area of circle is " << (3.14 * radius * radius) << std::endl;
+ }
+ void perimeter() {
+  std::cout << "Perimeter of cicle is " << (2.0 * 3.14 * radius) << std::endl;
+ }
+};
+
+int main() {
+ Triangle tr;
+ tr.findArea();
+ tr.perimeter();
+ 
+ Rectangle rec;
+ rec.findArea();
+ rec.perimeter();
+ 
+ Circle cr(10);
+ cr.findArea();
+ cr.perimeter();
+}
