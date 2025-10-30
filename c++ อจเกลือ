@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char op:
+    float num1, num2;
+    
+    cout << "Enter operator: +, -, *, /: ";
+  cin >> op;
+
+  cout << "Enter two operands: ";
+  cin >> num1 >> num2;
+   switch
+  case '+':
+    //cout
+    break;
+  case '-':
+    //cout
+    break;
+  case '*':
+    //cout
+    break;
+  case '/':
+    //cout
+    break;
+  default:
+    cout << "Error! operator is not corrected";
+    break;
+    return 0;
+}
